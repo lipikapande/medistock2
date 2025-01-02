@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="login.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -27,57 +28,48 @@
       <a href="#">
         <img
           class="logo"
-          alt="Omnifood logo"
+          alt="logo-img-medistock"
           src="favicon_2-removebg-preview.png"
         />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Abous Us</a></li>
+          <li><a class="main-nav-link" href="#about">About Us</a></li>
           <li>
-            <a class="main-nav-link" href="#">Pricing</a>
+            <a class="main-nav-link" href="#pricing">Pricing</a>
           </li>
-          <li><a class="main-nav-link" href="#">Login</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Sign up now!</a></li>
+          <li>
+            <a class="main-nav-link" href="login.html" target="_blank">Login</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Sign up now!</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="section-hero hidden show">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
-              Optimizing pharmacy supply with smart automation
+              MediStock &mdash; Pharmacy Supply Automation
             </h1>
             <p class="hero-description">
               MediStock simplifies supply management with real-time tracking,
               automatic orders, reducing shortages, overstock, and enhancing
               pharmacy-supplier collaboration.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Sign up now!</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
-            <!-- <div class="delivered-meals">
-              <div class="delivered-imgs">
-                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
-              </div>
-              <p class="delivered-text">
-                <span>250,000+</span> meals delivered last year!
-              </p>
-            </div> -->
+            <a href="#cta" class="btn btn--full margin-right-sm pulsating-text"
+              >Sign up now!</a
+            >
+            <a href="#about" class="btn btn--outline">Learn more &darr;</a>
           </div>
           <div class="hero-img-box">
-            <img src="hero-img-2.jpeg" class="hero-img" />
+            <img src="logo-removebg-preview.png" class="hero-img" />
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="container">
+      <section class="about hidden show" id="about">
+        <div class="container hidden show">
           <p class="heading-secondary heading-about">ABOUT US</p>
         </div>
         <div class="container about-description">
@@ -93,7 +85,179 @@
             time, and work more smoothly with their suppliers—all in one place.
           </p>
         </div>
-        <div class="container features"></div>
+        <div class="container features hidden show">
+          <p class="heading-tertiary">Why should you choose us?</p>
+          <ul></ul>
+        </div>
+        <div class="container issues">
+          <ul class="nav-list-features">
+            <li class="issues-list-item">
+              <p class="issues-list-heading">Automated Reordering</p>
+              <p class="issues-list-text">
+                Medistock automates reordering when stock levels hit preset
+                thresholds, ensuring continuous product availability.
+              </p>
+            </li>
+            <li class="issues-list-item">
+              <p class="issues-list-heading">Multi-Platform access</p>
+              <p class="issues-list-text">
+                Access Medistock on both web and mobile platforms, making it
+                easy to manage orders and inventory from anywhere.
+              </p>
+            </li>
+            <li class="issues-list-item">
+              <p class="issues-list-heading">Data analytics</p>
+              <p class="issues-list-text">
+                Track inventory trends and supplier performance with real-time
+                analytics for more informed decision-making.
+              </p>
+            </li>
+            <li class="issues-list-item">
+              <p class="issues-list-heading">Customisable reports</p>
+              <p class="issues-list-text">
+                Generate and export custom reports on inventory, orders, and
+                supplier performance to suit your needs.
+              </p>
+            </li>
+            <li class="issues-list-item">
+              <p class="issues-list-heading">Supplier Rating Systems</p>
+              <p class="issues-list-text">
+                Review and rate suppliers based on reliability and service to
+                make better procurement decisions.
+              </p>
+            </li>
+            <li class="issues-list-item">
+              <p class="issues-list-heading">Secure Payments</p>
+              <p class="issues-list-text">
+                Seamlessly process transactions with integrated, secure payment
+                gateways for safe, streamlined payments.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="heading-secondary margin-bottom-md">PRICING PLANS</span>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Wholesaler</p>
+              <p class="plan-price"><span>&#8377;</span>399</p>
+              <p class="plan-text">per month</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Obtain more clients</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Real-time demand forecasting</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Enhanced data analytics</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#cta" class="btn btn--full">Start today</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Retailer</p>
+              <p class="plan-price"><span>&#8377;</span>649</p>
+              <p class="plan-text">per month</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Flexible payment terms</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Product comparison tools</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Purchase recommendations</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#cta" class="btn btn--full">Start today</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. You can cancel at any time.
+          </aside>
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Join Medistock—Where Efficiency Meets Care!
+              </h2>
+              <p class="cta-text">
+                Empower your pharmacy with Medistock for efficiency,
+                transparency, and superior supply solutions.
+              </p>
+              <form class="cta-form" name="sign-up">
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                    aria-label="Email Address"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Password</label>
+                  <input
+                    type="password"
+                    id="myPassword"
+                    placeholder="Enter your password"
+                  />
+                </div>
+                <div class="sign-up-box show-password-box">
+                  <input
+                    type="checkbox"
+                    id="showPasswordCheckbox"
+                    onclick="togglePasswordVisibility('myPassword')"
+                  />
+                  <label class="show-password-label" for="myPassword"
+                    >Show Password</label
+                  >
+                </div>
+
+                <button
+                  class="btn btn--form"
+                  type="submit"
+                  aria-label="Sign up now"
+                >
+                  Sign up now
+                </button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Medistock Logo"
+            ></div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
